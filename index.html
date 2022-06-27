@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head> 
+    <meta charset="UTF-8">
+    <title>Заголовок страницы</title>
+</head>
+<style type="text/css">
+    body {
+        text-align: center;
+    }
+
+    #foto {
+        position: relative;
+        text-align: center;
+       
+    }
+
+    img {
+        width: 100vw;
+        height: auto;
+        border: 2px solid black;
+        /* max-width: 100vh; */
+    }
+
+    span {
+        font-size: 112px;
+    }
+</style>
+
+<body>
+    <script type="text/javascript">
+        let name = prompt("Как тебя зовут?");
+        if (name == "Алёнка") {
+            alert(`Good morning, ${name} !`);
+            document.write("<div id='foto'><img src='cofe.jpg'></div>");
+        }
+        else {
+            alert("Ай, ты врешь. Давай еще раз");
+            document.write("<span>&#127804;</span>");
+        }
+    </script>
+</body>
+
+</html>
