@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head> 
+<head>
     <meta charset="UTF-8">
     <title>Заголовок страницы</title>
 </head>
@@ -13,11 +13,11 @@
     #foto {
         position: relative;
         text-align: center;
-       
+
     }
 
     img {
-        width: 100vw;
+        width: auto;
         height: auto;
         border: 2px solid black;
         /* max-width: 100vh; */
@@ -29,17 +29,18 @@
 </style>
 
 <body>
-    <script type="text/javascript">
-        let name = prompt("Как тебя зовут?");
-        if (name == "Карина") {
-            alert(`С днём рождения, ${name} !`);
-            document.write("<div id='foto'><img src='papa_doch.jpg'></div>");
-        }
-        else {
-            alert("Ай, ты врешь. Давай еще раз");
-            document.write("<span>&#127804;</span>");
-        }
-    </script>
+<script type="text/javascript">
+    let word = prompt("Будущее закрыто, прошлое забыто, настоящее ...");
+    let name = "Карина";
+    let name2 = "Никита";
+    if (word == "даровано") {
+        alert(`С днём рождения, ${name} !`);
+        document.write("<div id='foto'><img src='papa_doch.jpg'></div>");
+    } else {
+        alert("Ты почти у цели. Давай еще раз");
+        document.write("<span>&#127804;</span>");
+    }
+</script>
 </body>
 
 </html>
