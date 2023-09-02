@@ -7,69 +7,92 @@
 </head>
 <style type="text/css">
 
-    html, body {
-        height: 150vh;
-        margin: 0;
-        padding: 0;
+    /*html, body {*/
+    /*    position: center;*/
+    /*    width: 80vw;*/
+    /*    height: 150vh;*/
+    /*    margin: 0;*/
+    /*    padding: 0;*/
+    /*    */
 
+    /*}*/
+    html, body {
+        height: 100%;
     }
+
+    html {
+        display: table;
+        width: 100%;
+    }
+
+    body {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
     #foto {
         background-image: url("img/papa_doch.jpg");
     }
-    #foto2 {
-         background-image: url("img/girl.jpg");
 
-     }
-    div{
-        margin:0 25% 0 25%;
-        width:80%;
+    #foto2 {
+        background-image: url("img/girl.jpg");
+
+    }
+
+    div {
+        margin: 0 25% 0 25%;
+        width: 80%;
         height: 33%;
         position: relative;
         text-align: center;
         background-size: 100% 100%;
     }
-    button{
+
+    button {
         position: center;
         width: 99%;
-        height: 20vh;
+        height: 100%;
     }
-    @media only screen and (max-device-width: 750px) {
+
+    @media only screen /* and (max-device-width: 750px)*/ and (orientation: portrait) {
         html, body {
             height: 100%;
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
 
         }
+
         div {
             margin: 0 auto;
             width: 80vw;
             height: 33vh;
-            border: red 2px solid;
+            border: green 2px solid;
             position: relative;
             text-align: center;
         }
-
     }
-    @media only screen and (min-device-height: 300px) {
+    @media only screen /* and (min-device-height: 300px) */  and (orientation: landscape ) {
         html, body {
+            width: 50vw;
             height: 150vh;
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
 
         }
         div {
             margin: 0 auto;
-            width: 80vw;
+            width: 100%;
             height: 33%;
             border: red 2px solid;
             position: relative;
             text-align: center;
         }
-
     }
-        span {
-            font-size: 250px;
-        }
+
+    span {
+        font-size: 250px;
+    }
 </style>
 
 <body>
@@ -80,7 +103,7 @@
     if (word == "даровано") {
         alert(`С днём рождения, ${name} !`);
         // document.write("<div id='foto'><img src='papa_doch.jpg'><img src='test.jpg'></div>");
-         document.write("<div id='foto'></div><div id='foto2'></div><div><a href='lough.html'><button style='font-size: xxx-large'>Чё за дела?А подарок?</button></a></div>");
+        document.write("<div id='foto'></div><div id='foto2'></div><div><a href='lough.html'><button style='font-size: xxx-large'>Чё за дела?А подарок?</button></a></div>");
     } else {
         alert("Ты почти у цели. Давай еще раз");
         document.write("<span>&#127804;</span>");
