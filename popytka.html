@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    html, body {
+        height: 100%;
+    }
+
+    html {
+        display: table;
+        width: 100%;
+    }
+
+    body {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    @media only screen /* and (min-device-height: 300px) */
+    and (orientation: landscape ) {
+        html, body {
+            width: 50vw;
+            height: 150vh;
+            margin: 0 auto;
+            padding: 0;
+
+        }
+
+        div {
+            margin: 0 auto;
+            width: 100%;
+            height: 70%;
+            border: red 2px solid;
+            position: relative;
+            text-align: center;
+            background-image: url("img/bitcoin.gif");
+        }
+    }
+</style>
+<body>
+<script type="text/javascript">
+    let number=true;
+    let word=true;
+    debugger;
+    do {
+         number=prompt("Квадратный корень 196 ?");
+        if(number=="14"){
+            number=false;
+            do {
+               word=prompt("Я тебя учил чем отличается взрослый человк от ребёнка. Мужчина от мальчика. Он умеет брать (15 букв)...?  ")
+                if (word=="ответственность"){
+                    word=false;
+                    alert(`С днём рождения, сын!`);
+                    document.write("<div></div>");
+                }else{
+                    alert("Ты ошибься, но не сдавайся")
+                }
+            }while(word);
+        }else{
+            alert("Ты ошибься, но не сдавайся")
+        }
+    }while(number);
+</script>
+</body>
+</html>

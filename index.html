@@ -7,15 +7,6 @@
 </head>
 <style type="text/css">
 
-    /*html, body {*/
-    /*    position: center;*/
-    /*    width: 80vw;*/
-    /*    height: 150vh;*/
-    /*    margin: 0;*/
-    /*    padding: 0;*/
-    /*    */
-
-    /*}*/
     html, body {
         height: 100%;
     }
@@ -39,6 +30,14 @@
         background-image: url("img/girl.jpg");
 
     }
+    #foto_01 {
+        background-image: url("img/sun_farther.jpg");
+    }
+
+    #foto2_01{
+        background-image: url("img/chel.jpeg");
+
+    }
 
     div {
         margin: 0 25% 0 25%;
@@ -55,7 +54,8 @@
         height: 100%;
     }
 
-    @media only screen /* and (max-device-width: 750px)*/ and (orientation: portrait) {
+    @media only screen /* and (max-device-width: 750px)*/
+    and (orientation: portrait) {
         html, body {
             height: 100%;
             margin: 0 auto;
@@ -72,7 +72,9 @@
             text-align: center;
         }
     }
-    @media only screen /* and (min-device-height: 300px) */  and (orientation: landscape ) {
+
+    @media only screen /* and (min-device-height: 300px) */
+    and (orientation: landscape ) {
         html, body {
             width: 50vw;
             height: 150vh;
@@ -80,6 +82,7 @@
             padding: 0;
 
         }
+
         div {
             margin: 0 auto;
             width: 100%;
@@ -97,17 +100,30 @@
 
 <body>
 <script type="text/javascript">
-    let word = prompt("Будущее закрыто, прошлое забыто, настоящее ...");
-    let name = "Карина";
-    let name2 = "Никита";
-    if (word == "даровано") {
-        alert(`С днём рождения, ${name} !`);
-        // document.write("<div id='foto'><img src='papa_doch.jpg'><img src='test.jpg'></div>");
-        document.write("<div id='foto'></div><div id='foto2'></div><div><a href='lough.html'><button style='font-size: xxx-large'>Чё за дела?А подарок?</button></a></div>");
-    } else {
-        alert("Ты почти у цели. Давай еще раз");
-        document.write("<span>&#127804;</span>");
+    let id = prompt("Введи индефикацинный номер паспорта");
+    if (id == "7245504A003PB8") {
+        let word = prompt("Будущее закрыто, прошлое забыто, настоящее ...");
+        if (word == "даровано") {
+            alert(`С днём рождения, Карина!`);
+            document.write("<div id='foto'></div><div id='foto2'></div><div><a href='lough.html'><button style='font-size: xxx-large'>Чё за дела?А подарок?</button></a></div>");
+        } else {
+            alert("Ты почти у цели. Давай еще раз");
+            document.write("<span>&#127804;</span>");
+        }
     }
+    if (id == ";khliugoufouf") {
+        let word = prompt("Step by step per aspera ad ...");
+        if (word == "astra") {
+            alert(`Ты думал будет так просто?`);
+            // document.write("<div id='foto'><img src='papa_doch.jpg'><img src='test.jpg'></div>");
+            document.write("<div id='foto_01'></div><div id='foto2_01'></div><div><a href='not_easy.html'><button style='font-size: xxx-large'>Это было EASY</button></a></div>");
+
+        } else {
+            alert("Ты почти у цели. Давай еще раз");
+            document.write("<span>&#127804;</span>");
+        }
+    }
+    let name2 = "Никита";
 </script>
 </body>
 
