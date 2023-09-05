@@ -39,6 +39,25 @@
             background-image: url("img/bitcoin.gif");
         }
     }
+    @media only screen /* and (max-device-width: 750px)*/
+    and (orientation: portrait) {
+        html, body {
+            height: 100%;
+            margin: 0 auto;
+            padding: 0;
+
+        }
+
+        div {
+            margin: 0 auto;
+            width: 80vw;
+            height: 33vh;
+            border: green 2px solid;
+            position: relative;
+            text-align: center;
+            background-image: url("img/bitcoin.gif");
+        }
+    }
 </style>
 <body>
 <script type="text/javascript">
@@ -50,7 +69,7 @@
         if(number=="14"){
       //      number=false;
             do {
-               word=prompt("Я тебя учил чем отличается взрослый человк от ребёнка. Мужчина от мальчика. Он умеет брать (15 букв)...?  ")
+               word=prompt("Я тебя учил чем отличается взрослый человек от ребёнка. Мужчина от мальчика. Он умеет брать (15 букв)...?  ")
                 if (word=="ответственность"){
                   //  word=false;
                     alert(`С днём рождения, сын!`);
