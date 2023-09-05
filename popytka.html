@@ -48,21 +48,21 @@
     do {
          number=prompt("Квадратный корень 196 ?");
         if(number=="14"){
-            number=false;
+      //      number=false;
             do {
                word=prompt("Я тебя учил чем отличается взрослый человк от ребёнка. Мужчина от мальчика. Он умеет брать (15 букв)...?  ")
                 if (word=="ответственность"){
-                    word=false;
+                  //  word=false;
                     alert(`С днём рождения, сын!`);
                     document.write("<div></div>");
                 }else{
                     alert("Ты ошибься, но не сдавайся")
                 }
-            }while(word);
+            }while(word!="ответственность"||word=="");
         }else{
             alert("Ты ошибься, но не сдавайся")
         }
-    }while(number);
+    }while(number!="14");
 </script>
 </body>
 </html>
