@@ -12,11 +12,13 @@
     }
 
     html {
+        background: linear-gradient(to bottom right, blue, pink);
         display: table;
         width: 100%;
     }
 
     body {
+
         display: table-cell;
         text-align: center;
         vertical-align: middle;
@@ -67,7 +69,6 @@
             margin: 0 auto;
             width: 80vw;
             height: 33vh;
-            border: green 2px solid;
             position: relative;
             text-align: center;
         }
@@ -87,7 +88,6 @@
             margin: 0 auto;
             width: 100%;
             height: 33%;
-            border: red 2px solid;
             position: relative;
             text-align: center;
         }
@@ -123,6 +123,9 @@
             alert("Ты почти у цели. Давай еще раз");
             document.write("<span>&#127804;</span>");
         }
+
+    }else{
+        alert("Ошибка?")
     }
 </script>
 </body>

@@ -15,62 +15,53 @@
     }
 
     body {
+        background: linear-gradient(to bottom right, pink, blue);
         display: table-cell;
         text-align: center;
         vertical-align: middle;
     }
-    /*p{*/
-    /*    background-image: url("img/no.gif");*/
-    /*    text-align: center;*/
-    /*    height: 99vh;*/
-    /*    border: red 2px solid;*/
-    /*}*/
-    div {
-        background-image: url("img/no.gif");
-        margin: 0 25% 0 25%;
-        width: 50%;
-        height: 70vh;
-        position: relative;
-        text-align: center;
-        background-size: 100% 100%;
-        border: green 2px solid;
-    }
+
     @media only screen /* and (max-device-width: 750px)*/
     and (orientation: portrait) {
         html, body {
             height: 100%;
             margin: 0 auto;
             padding: 0;
-
         }
 
         div {
-            /*background-image: url("img/no.gif");*/
             margin: 0 auto;
             width: 80vw;
             height: 50vh;
-            border: green 2px solid;
             position: relative;
             text-align: center;
         }
-    }@media only screen /* and (min-device-height: 300px) */
+    }
+    @media only screen /* and (min-device-height: 300px) */
     and (orientation: landscape ) {
         html, body {
-            width: 50vw;
-            height: 150vh;
+            width: 50vh;
+            height: 100vh;
             margin: 0 auto;
             padding: 0;
         }
 
         div {
-            /*background-image: url("img/no.gif");*/
             margin: 0 auto;
-            width: 100%;
-            height: 33%;
-            border: red 2px solid;
+            width: 70%;
+            height: 33vh;
             position: relative;
             text-align: center;
         }
+    }
+    div {
+        background-image: url("img/no.gif");
+        margin: 0 25% 0 25%;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        text-align: center;
+        background-size: 100% 100%;
     }
     img{
         width: 85vw;
