@@ -100,15 +100,20 @@
 
 <body>
 <script type="text/javascript">
-    let id = prompt("Введи индефикацинный номер паспорта");
-    if (id == "7245504A003PB8") {
+    let id = prompt("Фамилия человека, чьё день рождения празднуем?");
+    if (id == "Петкевич") {
         alert("Игра началась!")
-        let word = prompt("Будущее закрыто, прошлое забыто, настоящее ...");
-        if (word == "даровано") {
-            alert(`С днём рождения, Карина!`);
+        let word = prompt("Укажи номер друга, предложившего кровать на сегодняшний вечер");
+        // if (word == "даровано") {
+        //     alert(`С днём рождения, Карина!`);
+        //     document.write("<div id='foto'></div><div id='foto2'></div><div><a href='lough.html'><button style='font-size: xxx-large'>Чё за дела?А подарок?</button></a></div>");
+        // }
+        if (word == "637265802") {
+            alert(`С днём рождения, Мишка!`);
             document.write("<div id='foto'></div><div id='foto2'></div><div><a href='lough.html'><button style='font-size: xxx-large'>Чё за дела?А подарок?</button></a></div>");
+
         } else {
-            alert("Ты почти у цели. Давай еще раз");
+            alert("Ты почти у цели. Давай еще раз. 10Евро возвращается в команду!");
             document.write("<span>&#127804;</span>");
         }
     }
