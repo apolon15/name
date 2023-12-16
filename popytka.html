@@ -35,7 +35,7 @@
             border: red 2px solid;
             position: relative;
             text-align: center;
-            background-image: url("img/finish.gif");
+            background-image: url("img/table.gif");
             background-size: 100% 100%;
             background-repeat: no-repeat;
         }
@@ -65,24 +65,23 @@
     let number=true;
     let word=true;
     do {
-         number=prompt("Квадратный корень 196 ?");
-        if(number=="14"){
-      //      number=false;
+         number=prompt("Прошлое забыто, грядущее закрыто, настоящее  ...");
+        if(number=="даровано"){
             do {
                word=prompt("Я тебя учил чем отличается взрослый человек от ребёнка. Мужчина от мальчика. Он умеет брать (15 букв)...?  ")
                 if (word=="ответственность"){
                   //  word=false;
-                    alert(`С днём рождения, сын!`);
+                    alert(`С днём рождения, Лера!`);
                     document.write("<div></div>");
                     break;
                 }else{
-                    alert("Ты ошибься, но не сдавайся")
+                    alert("Ты ошибаешься, но не сдавайся!")
                 }
             }while(word!="ответственность"||word=="");
         }else{
-            alert("Ты ошибься, но не сдавайся")
+            alert("Ты ошибаешься, но не сдавайся!")
         }
-    }while(number!="14");
+    }while(number!="даровано");
 </script>
 </body>
 </html>

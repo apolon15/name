@@ -33,11 +33,15 @@
 
     }
     #foto_01 {
-        background-image: url("img/sun_farther.jpg");
+        background-image: url("img/edinorog.jpg");
     }
 
     #foto2_01{
         background-image: url("img/chel.jpeg");
+
+    }
+    #foto_03{
+        background-image: url("img/ups.jpg");
 
     }
 
@@ -100,39 +104,40 @@
 
 <body>
 <script type="text/javascript">
-    let id = prompt("Фамилия человека, чьё день рождения празднуем?");
-    if (id == "Петкевич") {
-        alert("Игра началась!")
-        let word = prompt("Укажи номер друга, предложившего кровать на сегодняшний вечер");
-        // if (word == "даровано") {
-        //     alert(`С днём рождения, Карина!`);
-        //     document.write("<div id='foto'></div><div id='foto2'></div><div><a href='lough.html'><button style='font-size: xxx-large'>Чё за дела?А подарок?</button></a></div>");
-        // }
-        if (word == "637265802") {
-            alert(`С ДНЁМ РОЖДЕНИЯ, МИШКА! ПРОКАТИ БАБУ НА ШИШКЕ`);
-            document.write("<div id='foto'></div><div id='foto2'></div><div><a href='lough.html'><button style='font-size: xxx-large'>Чё за дела?А подарок?</button></a></div>");
-
-        } else {
-            alert("Ты почти у цели. Давай еще раз. 10Евро возвращается в команду!");
-            document.write("<span>&#127804;</span>");
-        }
-    }
-    // if (id == "7249171A003PB0") {
+    let id = prompt("Докажи что ты не робот. Сумма последних цифр номера телефона крёсной мамы и крёстного папы?");
+    // if (id == "0000") {
     //     alert("Игра началась!")
-    //     let word = prompt("Step by step per aspera ad ...");
-    //     if (word == "astra") {
-    //         alert(`С днём рождения, сын!`);
-    //         // document.write("<div id='foto'><img src='papa_doch.jpg'><img src='test.jpg'></div>");
-    //         document.write("<div id='foto_01'></div><div id='foto2_01'></div><div><a href='not_easy.html'><button style='font-size: xxx-large'>Это было EASY</button></a></div>");
+    //     let word = prompt("Как называется ТикТок аккаунт твоего брата?");
+    //     // if (word == "даровано") {
+    //     //     alert(`С днём рождения, Карина!`);
+    //     //     document.write("<div id='foto'></div><div id='foto2'></div><div><a href='lough.html'><button style='font-size: xxx-large'>Чё за дела?А подарок?</button></a></div>");
+    //     // }
+    //     if (word == "637265802") {
+    //         alert(`С ДНЁМ РОЖДЕНИЯ, МИШКА! ПРОКАТИ БАБУ НА ШИШКЕ`);
+    //         document.write("<div id='foto'></div><div id='foto2'></div><div><a href='lough.html'><button style='font-size: xxx-large'>Чё за дела?А подарок?</button></a></div>");
+    //
     //     } else {
-    //         alert("Ты почти у цели. Давай еще раз");
-    //         document.write("<span>&#9742;</span>");
+    //         alert("Ты почти у цели. Давай еще раз. 10Евро возвращается в команду!");
+    //         document.write("<span>&#127804;</span>");
     //     }
-
-   // }
+    // }
+    if (id == "1") {
+        alert("Игра началась!")
+        let word = prompt("Квадратный корень 225 ?");
+        if (word == "15") {
+            alert(`С днём рождения, Лера!`);
+            // document.write("<div id='foto'><img src='papa_doch.jpg'><img src='test.jpg'></div>");
+            document.write("<div id='foto_01'></div><div id='foto2_01'></div><div><a href='not_easy.html'><button style='font-size: xxx-large'>Это было EASY</button></a></div>");
+        } else {
+            alert("Ты почти у цели. Давай еще раз");
+        //    document.write("<span>&#127804;</span>");
+            document.write("<div id='foto_03'></div>")
+        }
+   }
     else{
         alert("Ошибка?");
-        document.write("<span>&#127804;</span>");    }
+    //    document.write("<span>&#127804;</span>");
+        document.write("<div id='foto_03'></div>")}
 </script>
 </body>
 
